@@ -31,20 +31,149 @@ Before diving into the tasks and running the tests outlined in this guide, it's 
 
 By ensuring these prerequisites are met, you will be well-prepared to engage with the tasks, run tests, and make the most out of this mock CodeSignal pre-screen assessment. Remember, a well-set-up development environment is key to a smooth and efficient coding experience.
 
+## Available Practice Assessments
+
+This repository includes two comprehensive practice assessments designed for different levels of programming proficiency and domain knowledge.
+
+### 🗂️ File Storage System (`practice_assessments/file_storage_system/`)
+**Difficulty: Beginner to Intermediate**
+
+A simplified file hosting service simulation that tests fundamental programming concepts.
+
+**Key Features:**
+- Basic CRUD operations (upload, get, copy)
+- File search with prefix matching
+- Temporal operations with TTL support
+- Simple rollback functionality
+
+**Skills Tested:**
+- Data structures (dictionaries, lists)
+- String manipulation
+- Time-based logic
+- Basic state management
+
+**Best For:** Entry-level to mid-level developers, coding bootcamp graduates, junior developers
+
+---
+
+### 🏦 Banking Transaction System (`practice_assessments/banking_system/`)
+**Difficulty: Intermediate to Advanced**
+
+A sophisticated banking application with transaction tracking, fraud detection, and complex financial operations.
+
+**Key Features:**
+- Precise decimal arithmetic for financial calculations
+- Multi-account transaction management
+- Fraud detection and suspicious activity monitoring
+- Temporal operations with full state reconstruction
+- Advanced rollback and checkpoint systems
+- Money laundering detection algorithms
+
+**Skills Tested:**
+- Object-oriented design
+- Financial domain logic
+- Complex state management
+- Pattern detection algorithms
+- System design principles
+- Error handling and validation
+
+**Best For:** Mid-level to senior developers, candidates with financial software experience, system design interviews
+
+## 📊 Assessment Comparison
+
+| Aspect | File Storage | Banking System |
+|--------|--------------|----------------|
+| **Complexity** | Simple | Complex |
+| **Domain** | Generic IT | Financial Services |
+| **Code Lines** | ~50-100 | ~500+ |
+| **Test Cases** | 4 test groups | 9+ comprehensive tests |
+| **Key Concepts** | Basic programming | Advanced algorithms |
+| **Time to Complete** | 1-2 hours | 4-6 hours |
+| **Real-world Relevance** | Moderate | High |
+
+## 🎯 Choosing the Right Assessment
+
+### Use File Storage System When:
+- Assessing junior developers or new graduates
+- Testing fundamental programming skills
+- Limited time for assessment (1-2 hours)
+- Focus on basic data structures and algorithms
+
+### Use Banking System When:
+- Assessing senior developers or architects
+- Testing system design capabilities
+- Evaluating financial software experience
+- Need comprehensive assessment (4-6 hours)
+- Focus on real-world complexity and domain expertise
+
+## 🏗️ Assessment Structure
+
+Both assessments follow the same progressive structure:
+
+1. **Level 1**: Foundation - Basic operations and validation
+2. **Level 2**: Intermediate - Advanced queries and data processing
+3. **Level 3**: Advanced - Temporal operations and complex logic
+4. **Level 4**: Expert - System design and advanced features
+
+This allows for:
+- **Partial credit** based on completed levels
+- **Progressive difficulty** to identify skill ceiling
+- **Modular testing** of different competencies
+- **Fair assessment** across different experience levels
+
+## 🚀 Quick Start
+
+### File Storage System
+```bash
+cd practice_assessments/file_storage_system
+python test_simulation.py
+```
+
+### Banking System
+```bash
+cd practice_assessments/banking_system
+python test_simulation.py
+```
+
+## 📈 Success Metrics
+
+### File Storage System:
+- **Level 1 Complete**: Basic programming competency
+- **Level 2 Complete**: Data structure proficiency  
+- **Level 3 Complete**: Intermediate problem-solving
+- **Level 4 Complete**: Advanced programming skills
+
+### Banking System:
+- **Level 1 Complete**: Financial domain understanding
+- **Level 2 Complete**: Complex state management
+- **Level 3 Complete**: Advanced algorithm implementation
+- **Level 4 Complete**: System architecture capabilities
+
+Both assessments provide valuable insights into candidate capabilities and help identify the right fit for different roles and seniority levels.
+
 ## How to Use This Mock Assessment
 
 1. **Timing**: Set a strict time limit of 90 minutes for yourself to complete the tasks ⏳. This practice is designed to simulate the time constraints often present in real assessments, fostering the development of effective time management skills.
 2. **Sequential Progression**: Start with Level 1 and do not advance to the subsequent level until you have fully completed the preceding one 🛤️. This methodical approach ensures a gradual and thorough understanding of the challenges presented.
 
-3. **Testing and Development Environment**: Focus your coding efforts within the `simulation.py` file 🖥️. This file is where you will implement your solutions and simulate the operations described in the tasks.
+3. **Choose Your Assessment**: Select either the File Storage System (beginner-intermediate) or Banking System (intermediate-advanced) based on your skill level and the type of role you're preparing for.
 
-4. **Running Tests**: Utilize the provided `test_simulation.py` file to run unit tests against your code 🧪. This file contains test cases for each level, allowing you to verify the correctness of your solutions incrementally. To run the tests for a specific level, use the following command structure in your terminal or command prompt:
+4. **Testing and Development Environment**: 
+   - **File Storage**: Focus your coding efforts within the `practice_assessments/file_storage_system/simulation.py` file 🖥️
+   - **Banking System**: Focus your coding efforts within the `practice_assessments/banking_system/simulation.py` file 🖥️
 
+5. **Running Tests**: Utilize the provided test files to run unit tests against your code 🧪:
+
+   **File Storage System:**
    - For Level 1 tests: `python3 -m unittest test_simulation.TestSimulateCodingFramework.test_group_1`
    - For Level 2 tests: `python3 -m unittest test_simulation.TestSimulateCodingFramework.test_group_2`
-   - For subsequent levels, adjust the `test_group_x` part of the command accordingly.
+   - For subsequent levels, adjust the `test_group_x` part accordingly
+   
+   **Banking System:**
+   - Run all tests: `python test_simulation.py`
+   - Individual test methods can be run using unittest module
 
-5. **Refactoring**: As you progress through the levels, revisit and refactor your earlier solutions as needed to accommodate the additional functionality required by later tasks 🔧. This iterative process is key to developing scalable and maintainable software.
+6. **Refactoring**: As you progress through the levels, revisit and refactor your earlier solutions as needed to accommodate the additional functionality required by later tasks 🔧. This iterative process is key to developing scalable and maintainable software.
 
 To ensure the fastest possible progression through the levels, consider the following strategies:
 
@@ -89,11 +218,15 @@ Contributing to this guide is a fantastic way to help others prepare for industr
 
 2. **Create New Questions**: Design your questions to mimic real-world coding assessments. Ensure they are clear, concise, and cover a range of difficulties. Each question should challenge a specific skill or set of skills relevant to coding assessments, such as algorithmic thinking, data structures, or problem-solving under time constraints.
 
-3. **Follow the Existing Structure**: Your questions should be similar in structure (but not content) to the ones found in the `Practice Assessments` directory, specifically the `file_storage` example. This consistency helps candidates familiarize themselves with the format and focus on solving the problems.
+3. **Follow the Existing Structure**: Your questions should be similar in structure (but not content) to the existing assessments found in the `practice_assessments/` directory. We currently have two example assessments:
+   - **File Storage System** (`file_storage_system/`) - Beginner to intermediate level
+   - **Banking System** (`banking_system/`) - Intermediate to advanced level
+   
+   This consistency helps candidates familiarize themselves with the format and focus on solving the problems.
 
 4. **Adhere to the PDF Guidelines**: The PDF in the repository outlines the rules for how questions should work. Please ensure your questions comply with these rules to maintain the quality and relevance of the assessments.
 
-5. **Submit Your Questions**: Once you have created your questions, place them in the `Practice Assessments` directory. If your questions are based on a new theme or concept not currently covered, consider creating a new subdirectory within `Practice Assessments` to organize them accordingly.
+5. **Submit Your Questions**: Once you have created your questions, place them in the `practice_assessments/` directory. Create a new subdirectory for your assessment theme (e.g., `e_commerce_system/`, `social_media_platform/`, etc.) to organize them accordingly.
 
 6. **Open a Pull Request**: Submit your contributions via a pull request. In your pull request, provide a brief explanation of your questions and how they align with the objectives of the coding framework. Our team will review your submission and provide feedback if necessary.
 
